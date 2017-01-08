@@ -12,21 +12,24 @@
       <section>
         <h1>Text to be decoded:</h1>
 
-        <textarea rows="5"></textarea>
+        <textarea id="text" rows="5"></textarea>
 
         <p>Shift</p>
 
-        <select>
-          <option value="" disabled="disabled" selected="selected">Please select a number</option>
-        </select>
+        <input id="shift" type="text" value="" />
 
-        <input type="submit" value="Go"></input>
+        <input id="submit" type="submit" value="Go" />
+
+        <div id="result" class="hide">
+          <h1>Result:</h1>
+          <p class="result-text"></p>
+        </div>
       </section>
 
       <section>
-        <h1>Previously decoded text</h2>
+        <h1>Previously decoded text</h1>
         <ul>
-          
+
         </ul>
       </section>
 
@@ -34,6 +37,10 @@
 
     <script src="ajax.js"></script>
     <script src="script.js"></script>
+
+    <script>
+      renderAll.init();
+    </script>
 
   </body>
 </html>
