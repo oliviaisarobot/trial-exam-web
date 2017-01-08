@@ -51,13 +51,10 @@ app.get('/decode', function(req, res) {
   var current = [];
   con.query('SELECT * FROM decode', function(err, rows, fields) {
     current = rows[rows.length - 1];
-    if (err) throw err;
     var decoded = caesar.cipher(current.shift, current.text);
     var response = {"status": "ok", "text": decoded};
-    con.query('SELECT * FROM decode', function(err, rows, fields) {
-      if (err) throw err;
-      res.json(response);
-    });
+    if (err) throw err;
+    res.json(response);
   });
 });
 
