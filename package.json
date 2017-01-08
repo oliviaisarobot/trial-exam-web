@@ -1,0 +1,26 @@
+{
+  "name": "trial-exam-web",
+  "version": "1.0.0",
+  "description": "- Fork this repository under your own account\r  - Clone the forked repository to your computer\r  - Commit your progress frequently and with descriptive commit messages\r  - All your answers and solutions should go in this repository",
+  "main": "ajax.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mysql": "^2.12.0",
+    "node": "^0.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliviaisarobot/trial-exam-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oliviaisarobot/trial-exam-web/issues"
+  },
+  "homepage": "https://github.com/oliviaisarobot/trial-exam-web#readme"
+}
